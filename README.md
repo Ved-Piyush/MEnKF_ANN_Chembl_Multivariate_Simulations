@@ -22,6 +22,10 @@ To create the feature files to run the Matrix Ensemble Kalman Filter Method plea
 
 ## Running the MEnKF Simulations
 
-1. Run the script [MEnKF_using_Smiles_and_Rdkit_Embeddings.ipynb](https://github.com/Ved-Piyush/MEnKF_ChemBL_Multivariate/blob/main/MEnKF_Main_Script/MEnKF_using_Smiles_and_Rdkit_Embeddings.ipynb) which will run the MEnKF method on the features `small_mol_phase_3_features_for_both.npy` and outputs `smiles_with_rdkit_with_small_phase_3_outputs.csv`. Towards the end of the script, one can find the evaluation metrics of root mean squared errors, coverages, and widths of the prediction intervals for the training and the testing sets. There are also the observed vs. predicted scatterplots for the testing data and the trajectory of the convex averaging weights over the updating iterations. There's also a plot of the histogram of the predictions from MEnKF method for some test samples, the ground truth value, and the empirical 95% prediction intervals from the MEnKF method. 
+1. Generate the data for the simulations under three different settings
+   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30% with a target covariance matrix of $\begin{bmatrix}
+0.3 & 0.06\\
+0.06 & 0.3
+\end{bmatrix}$
 
 
