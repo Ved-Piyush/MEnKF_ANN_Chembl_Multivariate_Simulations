@@ -24,5 +24,9 @@ To create the feature files to run the Matrix Ensemble Kalman Filter Method plea
 
 1. Generate the data for the simulations under three different settings:
    
-   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and 0.06 for the covariance between the two targets. 
+   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and 0.06 for the covariance between the two targets.
+
+   ii. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and -0.27 for the covariance between the two targets.
+
+   iii. Smiles Output having a weight of 80% and the Rdkit Outputs having a weight of 20%. The covariance matrix for the target has 0.2 along the diagonal and -0.18 for the covariance between the two targets.
 
