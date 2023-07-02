@@ -23,7 +23,6 @@ To create the feature files to run the Matrix Ensemble Kalman Filter Method plea
 ## Running the MEnKF Simulations
 
 1. Generate the data for the simulations under three different settings
-   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30% with a target covariance matrix of $$\begin{bmatrix} 0.3 & 0.06 \\
-                                                                                                                                             0.06 & 0.3 \\                                                                                                                                                       \end{bmatrix}$$
+   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30% and $\alpha$
 
 
