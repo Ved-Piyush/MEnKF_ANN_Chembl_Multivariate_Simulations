@@ -1,0 +1,36 @@
+2023-06-13 20:07:27.782337: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-13 20:07:28.387481: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-06-13 20:07:28.467869: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /util/opt/openmpi/4.0/gcc/10.2/lib:/util/comp/gcc/10/lib64:/util/comp/gcc/10/lib
+2023-06-13 20:07:28.468049: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-06-13 20:07:31.223519: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /util/opt/openmpi/4.0/gcc/10.2/lib:/util/comp/gcc/10/lib64:/util/comp/gcc/10/lib
+2023-06-13 20:07:31.224469: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /util/opt/openmpi/4.0/gcc/10.2/lib:/util/comp/gcc/10/lib64:/util/comp/gcc/10/lib
+2023-06-13 20:07:31.224526: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-06-13 20:07:36.664097: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /util/opt/openmpi/4.0/gcc/10.2/lib:/util/comp/gcc/10/lib64:/util/comp/gcc/10/lib
+2023-06-13 20:07:36.664293: W tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: UNKNOWN ERROR (303)
+2023-06-13 20:07:36.664360: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (c2512.crane.hcc.unl.edu): /proc/driver/nvidia/version does not exist
+2023-06-13 20:07:36.665719: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[Parallel(n_jobs=39)]: Using backend LokyBackend with 39 concurrent workers.
+[Parallel(n_jobs=39)]: Done   3 out of  50 | elapsed: 231.2min remaining: 3622.8min
+[Parallel(n_jobs=39)]: Done   9 out of  50 | elapsed: 300.5min remaining: 1368.9min
+[Parallel(n_jobs=39)]: Done  15 out of  50 | elapsed: 326.4min remaining: 761.5min
+[Parallel(n_jobs=39)]: Done  21 out of  50 | elapsed: 353.7min remaining: 488.5min
+[Parallel(n_jobs=39)]: Done  27 out of  50 | elapsed: 380.8min remaining: 324.4min
+[Parallel(n_jobs=39)]: Done  33 out of  50 | elapsed: 396.8min remaining: 204.4min
+[Parallel(n_jobs=39)]: Done  39 out of  50 | elapsed: 410.7min remaining: 115.8min
+[Parallel(n_jobs=39)]: Done  45 out of  50 | elapsed: 418.0min remaining: 46.4min
+[Parallel(n_jobs=39)]: Done  50 out of  50 | elapsed: 425.6min finished
+Traceback (most recent call last):
+  File "/lustre/work/statgrads/vpiyush2/New_Simulations/Simulation_Data_Generation/get_sim_rep_results.py", line 526, in <module>
+    results_df.columns = col_names
+  File "/home/statgrads/vpiyush2/.conda/envs/enkf/lib/python3.10/site-packages/pandas/core/generic.py", line 5915, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/home/statgrads/vpiyush2/.conda/envs/enkf/lib/python3.10/site-packages/pandas/core/generic.py", line 823, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/home/statgrads/vpiyush2/.conda/envs/enkf/lib/python3.10/site-packages/pandas/core/internals/managers.py", line 230, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/home/statgrads/vpiyush2/.conda/envs/enkf/lib/python3.10/site-packages/pandas/core/internals/base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 13 elements, new values have 15 elements
