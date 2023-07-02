@@ -48,3 +48,19 @@ We trained two more base models for the changepoint simulations. These two model
 
 2. Train the single-arm base model using only the Rdkit Feature with the script [PSA_AlogP_Base_Model_Using_Rdkit.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Base_Model_Training/PSA_AlogP_Base_Model_Using_Rdkit.ipynb). The stored model `Model_BOTH_Rdkit` will be placed in the [Base_Models](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/tree/main/Base_Models) folder.
 
+3. Extract the Smiles and Rdkit Embeddings along with the predicted multivariate outputs from the trained single-arm models in 1 and 2. These files would be placed in the [Data](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/tree/main/Data) folder by the names of `small_mol_phase_3_features_using_Smiles.npy`, `small_mol_phase_3_features_using_Rdkit.npy`, `smiles_outputs.npy`, and `rdkit_outputs.npy`, respectively. 
+
+### Generating Data for the Different ChangePoint Scenarios
+
+We test two changepoint scenarios. 
+
+1. The first batch of data is generated from a model having 70% weight for the Smiles Outputs and 30% weight for the Rdkit Outputs. The second batch of data is generated from a model having 40% weight for the Smiles Outputs and 60% weight for the Rdkit Outputs. The covariance matrix for the target has 0.3 along the diagonal and -0.06 for the covariance between the two targets. [Generate_Simulation_Data_Changepoint_70_Smiles_to_60_Rdkit.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data_Changepoint_70_Smiles_to_60_Rdkit.ipynb)
+
+2. The first batch of data is generated from a model having 100% weight for the Smiles Outputs and 0% weight for the Rdkit Outputs. The second batch of data is generated from a model having 0% weight for the Smiles Outputs and 100% weight for the Rdkit Outputs. The covariance matrix for the target has 0.3 along the diagonal and -0.06 for the covariance between the two targets. [Generate_Simulation_Data_Changepoint_Full_Smiles_to_Full_Rdkit.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data_Changepoint_Full_Smiles_to_Full_Rdkit.ipynb)
+
+### Results 
+
+The scripts for obtaining the plots related to the changepoint scenario can be found at: 
+
+1. For the case in 1 the script [ChangePoint_Frozen_Params_70_Smiles_to_60_Rdkit_Config1.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_ChangePoint_Scripts/ChangePoint_Frozen_Params_70_Smiles_to_60_Rdkit_Config1.ipynb) can be used to obtain the various plots.
+2. For the case in 1 the scripts [ChangePoint_Frozen_Params_Full_Smiles_to_Full_Rdkit_Config1.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_ChangePoint_Scripts/ChangePoint_Frozen_Params_Full_Smiles_to_Full_Rdkit_Config1.ipynb), [ChangePoint_Frozen_Params_Full_Smiles_to_Full_Rdkit_Config2.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_ChangePoint_Scripts/ChangePoint_Frozen_Params_Full_Smiles_to_Full_Rdkit_Config2.ipynb), and [ChangePoint_Frozen_Params_Full_Smiles_to_Full_Rdkit_Config3.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_ChangePoint_Scripts/ChangePoint_Frozen_Params_Full_Smiles_to_Full_Rdkit_Config3.ipynb) can be used to obtain the various plots under different hyperparameter combinations of the MEnKF algorithm.
