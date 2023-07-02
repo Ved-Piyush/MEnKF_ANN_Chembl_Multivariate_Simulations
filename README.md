@@ -24,9 +24,9 @@ To create the feature files to run the Matrix Ensemble Kalman Filter Method plea
 
 1. Generate the data for the simulations under three different settings:
    
-   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and 0.06 for the covariance between the two targets.
+   i. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and 0.06 for the covariance between the two targets. [Generate_Simulation_Data70_30_with_cov_positive_0.06_var.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data70_30_with_cov_positive_0.06_var.ipynb)
 
-   ii. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and -0.27 for the covariance between the two targets.
+   ii. Smiles Output having a weight of 70% and the Rdkit Outputs having a weight of 30%. The covariance matrix for the target has 0.3 along the diagonal and -0.27 for the covariance between the two targets. [Generate_Simulation_Data_70_30_with_cov_minus_0.27_var.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data_70_30_with_cov_minus_0.27_var.ipynb)
 
-   iii. Smiles Output having a weight of 80% and the Rdkit Outputs having a weight of 20%. The covariance matrix for the target has 0.2 along the diagonal and -0.18 for the covariance between the two targets.
+   iii. Smiles Output having a weight of 80% and the Rdkit Outputs having a weight of 20%. The covariance matrix for the target has 0.2 along the diagonal and -0.18 for the covariance between the two targets. [https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data_80_20_cov_minus_0.2_var.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data_80_20_cov_minus_0.2_var.ipynb)
 
