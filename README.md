@@ -30,3 +30,11 @@ To create the feature files to run the Matrix Ensemble Kalman Filter Method plea
 
    iii. Smiles Output having a weight of 80% and the Rdkit Outputs having a weight of 20%. The covariance matrix for the target has 0.2 along the diagonal and -0.18 for the covariance between the two targets. [Generate_Simulation_Data_80_20_cov_minus_0.2_var.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Simulation_Data_Generation/Generate_Simulation_Data_80_20_cov_minus_0.2_var.ipynb)
 
+2. The scripts for running the simulations with the above three configurations:
+
+   i. [Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_70_30_with_positive_cov](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_Simulation_Scripts/Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_70_30_with_positive_cov.ipynb) has the script for running the simulations for 1i case.
+
+   ii. [Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_70_30_with_cov.](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_Simulation_Scripts/Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_70_30_with_cov.ipynb) has the script for running the simulations for 1ii case.
+
+   iii. [Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_80_20_with_cov](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_Simulation_Scripts/Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_80_20_with_cov.ipynb) has the script for running the simulations for the 1iii case. 
+
