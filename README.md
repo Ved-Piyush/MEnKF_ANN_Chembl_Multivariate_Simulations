@@ -38,3 +38,13 @@ To create the feature files to run the Matrix Ensemble Kalman Filter Method plea
 
    iii. [Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_80_20_with_cov](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Main_MEnKF_Simulation_Scripts/Yegenoglu_Method_Learnable_Covariance_using_Script_Ht_peturbed_ys_80_20_with_cov.ipynb) has the script for running the simulations for the 1iii case. 
 
+## ChangePoint Simulations
+
+### Data Generation
+
+We trained two more base models for the changepoint simulations. These two models use the Smiles Feature and the Rdkit Features in a single arm to predict the multivariate targets. 
+
+1. Train the single-arm base model using only the Smiles Feature with the script [PSA_AlogP_Base_Model_Using_Smiles](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Base_Model_Training/PSA_AlogP_Base_Model_Using_Smiles.ipynb). The stored model `Model_BOTH_Smiles` will be placed in the [Base_Models](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/tree/main/Base_Models) folder.
+
+2. Train the single-arm base model using only the Rdkit Feature with the script [PSA_AlogP_Base_Model_Using_Rdkit.ipynb](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/blob/main/Base_Model_Training/PSA_AlogP_Base_Model_Using_Rdkit.ipynb). The stored model `Model_BOTH_Rdkit` will be placed in the [Base_Models](https://github.com/Ved-Piyush/MEnKF_ANN_Chembl_Multivariate_Simulations/tree/main/Base_Models) folder.
+
